@@ -1,0 +1,11 @@
+---
+
+- name: Download gnatsd
+  shell: /usr/local/go/bin/go get github.com/nats-io/gnatsd
+  environment:
+    GOPATH: /root/.go
+
+- name: Insatll gnatsd
+  shell: /usr/local/go/bin/go install github.com/nats-io/gnatsd
+  environment:
+    GOPATH: /root/.go

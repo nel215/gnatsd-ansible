@@ -1,0 +1,7 @@
+---
+
+- name: Download go.tar.gz
+  get_url: url=https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz dest=/tmp
+
+- name: Unarchive go.tar.gz
+  unarchive: src=/tmp/go1.4.2.linux-amd64.tar.gz dest=/usr/local copy=no

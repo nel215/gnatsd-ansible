@@ -1,0 +1,11 @@
+---
+
+-
+  name: Apply all configuration
+  user: root
+  hosts:
+    - localhost
+  roles:
+    - go
+    - gnatsd
+
